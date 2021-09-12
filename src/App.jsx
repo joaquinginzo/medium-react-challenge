@@ -1,6 +1,7 @@
 import './App.scss';
 import Nav from "./components/Nav/Nav"
 import Main from "./components/Main/Main"
+import SingleNew from './components/SingleNew/SingleNew';
 
 const  App = () => {
 
@@ -13,6 +14,10 @@ const  App = () => {
   }
 
   const firstArticle = {
+    title:"Map, Filter, and Reduce in Swift",
+    paragraph:"Do you want to improve your skills in functional programming with Swift? In this article, we will discuss popular higher-order functions…",
+    author:"Arman Abkar",
+    date:"11 sept - 7min read"
 
   }
 
@@ -29,7 +34,7 @@ const  App = () => {
   }
 
   const fifthArticle = {
-    
+
   }
 
 
@@ -48,6 +53,38 @@ const  App = () => {
           <div className ="latest">
           <h4>LATEST</h4>
           </div>
+          <SingleNew
+          title={firstArticle.title}
+          paragraph={firstArticle.paragraph}
+          author={firstArticle.author}
+          date={firstArticle.date}
+          />
+          <SingleNew
+          title={secondArticle.title}
+          paragraph={secondArticle.paragraph}
+          author={secondArticle.author}
+          date={secondArticle.date}
+          />
+          <SingleNew
+          title={secondArticle.title}
+          paragraph={secondArticle.paragraph}
+          author={secondArticle.author}
+          date={secondArticle.date}
+          />
+          <SingleNew
+          title={thirdArticle.title}
+          paragraph={thirdArticle.paragraph}
+          author={thirdArticle.author}
+          date={thirdArticle.date}
+          />
+          <SingleNew
+          title={firstArticle.title}
+          paragraph={firstArticle.paragraph}
+          author={firstArticle.author}
+          date={firstArticle.date}
+          />
+          
+
 
 
         </div>
