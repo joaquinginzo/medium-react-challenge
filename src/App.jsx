@@ -2,6 +2,8 @@ import './App.scss';
 import Nav from "./components/Nav/Nav"
 import Main from "./components/Main/Main"
 import SingleNew from './components/SingleNew/SingleNew';
+import Featured from "./components/Featured/Featured";
+import Programming from './components/Programming/Programming';
 
 const  App = () => {
 
@@ -78,6 +80,8 @@ const  App = () => {
           author={thirdArticle.author}
           date={thirdArticle.date}
           />
+          <Featured
+          />
           <SingleNew
           title={firstArticle.title}
           paragraph={firstArticle.paragraph}
@@ -85,13 +89,12 @@ const  App = () => {
           date={firstArticle.date}
           />
           
-
+        </div>
+        <div className="side-bar">
+          <Programming/>
 
 
         </div>
-        <aside>
-
-        </aside>
       </div>
     </>
   );
