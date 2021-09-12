@@ -3,6 +3,15 @@ import Nav from "./components/Nav/Nav"
 import Main from "./components/Main/Main"
 
 const  App =()=> {
+
+  
+
+
+
+
+
+
+
   return (
     <>
       <Nav/>
