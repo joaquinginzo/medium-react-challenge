@@ -17,15 +17,22 @@ const  App = () => {
     title:"Map, Filter, and Reduce in Swift",
     paragraph:"Do you want to improve your skills in functional programming with Swift? In this article, we will discuss popular higher-order functions…",
     author:"Arman Abkar",
-    date:"11 sept - 7min read"
+    date:"11 sept - 7 min read"
 
   }
 
   const secondArticle = {
-
+    title: "How to Setup Nginx Server On Ubuntu:18.04 /Dockerfile",
+    paragraph: "The brand new MapTiler Desktop 11.2 arrived with estimation of rendering time, new default output format, KML for Google Earth, and more!",
+    author: "Cedric",
+    date:"11 Sept - 5 min read"
   }
 
   const thirdArticle = {
+    title:"The Ultimate Handbook for OpenCV & Pillow",
+    paragraph:"In this article, I will list out all the useful codes regarding these libraries. They are listed side by side so that you can compare…",
+    author:"Cedric",
+    date:"11 Sept - 8 min read"
 
   }
 
@@ -58,12 +65,6 @@ const  App = () => {
           paragraph={firstArticle.paragraph}
           author={firstArticle.author}
           date={firstArticle.date}
-          />
-          <SingleNew
-          title={secondArticle.title}
-          paragraph={secondArticle.paragraph}
-          author={secondArticle.author}
-          date={secondArticle.date}
           />
           <SingleNew
           title={secondArticle.title}

@@ -9,9 +9,8 @@ const SingleNew = (props) => {
             <div className="new-container__text">
                 <h3>{props.title}</h3>
                 <p>{props.paragraph}</p>
-                <p>{props.author}</p>
-                <p>{props.date}</p>
-
+                <p className="new-container__text-author">{props.author}</p>
+                <p className="new-container__text-date">{props.date}</p>
             </div>
             <div className="new-container__pic">
                 <img src={NewImageSrc} alt="" />

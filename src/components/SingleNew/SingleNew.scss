@@ -3,8 +3,14 @@
     display: flex;
     font-weight: 150;
     &__pic{
-        margin: 20px 5px;
-        
-        
+        margin: 20px 5px; 
     }
+}
+.new-container__text-author{
+    font-size: 12px;
+    font-weight:bolder
+}
+
+.new-container__text-date{
+    font-size: 12px;
 }
