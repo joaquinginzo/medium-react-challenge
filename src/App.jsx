@@ -1,14 +1,21 @@
 import './App.scss';
+import Nav from "./components/Nav/Nav"
+import Main from "./components/Main/Main"
 
 const  App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <div className="screen-container">
+        <main>
+        <Main/>
+
+        </main>
+        <aside>
+
+        </aside>
+      </div>
+    </>
   );
 }
 

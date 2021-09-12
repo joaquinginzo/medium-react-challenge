@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        &container-item{
+            margin: 15px;
+        }
+    }
+    &__container-item{
+        margin: 15px;
+    }
+}
