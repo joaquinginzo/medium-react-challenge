@@ -6,8 +6,12 @@ const Nav = () => {
     return (
         <nav className="nav">
             <div className="nav__container nav__container-left">
-                <h1 className="nav__container-item">Medium</h1>
-                <h2 className="nav__container-item">Programming</h2>
+                <div className="full-box"></div>
+                <div className="half-box"></div>
+                <div className="quarter-box"></div>
+                <div></div>
+                <h2 className="nav__container-item brand">Medium</h2>
+                <h3 className="nav__container-item">Programming</h3>
             </div>
 
 

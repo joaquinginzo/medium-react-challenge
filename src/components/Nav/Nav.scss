@@ -2,14 +2,26 @@
     display: flex;
     justify-content: space-around;
     margin:10px 0px;
+    border-bottom: 7.5px inset #F2F2F2;
     &__container{
         display: flex;
         justify-content: space-around;
-        &container-item{
-            margin: 15px;
-        }
     }
     &__container-item{
         margin: 15px;
+    }
+    .full-box{
+        margin-top: 20px;
+        background-color: black;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+    .half-box{
+        margin-top: 20px;
+        border-radius: 30px 30px 20px 20px;
+        background-color: black;
+        width: 25px;
+        height: 25px;
     }
 }
