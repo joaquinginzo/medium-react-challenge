@@ -4,6 +4,11 @@ import Main from "./components/Main/Main"
 import SingleNew from './components/SingleNew/SingleNew';
 import Featured from "./components/Featured/Featured";
 import Programming from './components/Programming/Programming';
+import RelatedTopics from './components/RelatedTopics/RelatedTopics';
+
+//Issues : Problems passing images as props
+// buggy interaction with same classNames in different scss files. (Overriden?)
+
 
 const  App = () => {
 
@@ -12,7 +17,6 @@ const  App = () => {
     subtitle: "No, but centaurs might",
     author: "Philly Murray to the world",
     date: "12 august - 8min read"
-    //problem passing images as props
   }
 
   const firstArticle = {
@@ -38,15 +42,13 @@ const  App = () => {
 
   }
 
-  const fourthArticle = {
+  const featured = {
+    title: "Bill Murray",
+    paragraph: "Teacher, coder, long-ago Microsoft MVP. Author of heavy books. Join Young Coder for a creative take on science and technology. Queries: matthew@prosetech.com",
+    articleTitle:"Is blazer the future or just another article?",
+    articleTime : "7 min read"
 
   }
-
-  const fifthArticle = {
-
-  }
-
-
 
   return (
     <>
@@ -81,6 +83,9 @@ const  App = () => {
           date={thirdArticle.date}
           />
           <Featured
+          title={featured.title}
+          paragraph={featured.paragraph}
+          articleTitle={featured.articleTitle}
           />
           <SingleNew
           title={firstArticle.title}
@@ -92,6 +97,7 @@ const  App = () => {
         </div>
         <div className="side-bar">
           <Programming/>
+          <RelatedTopics/>
 
 
         </div>

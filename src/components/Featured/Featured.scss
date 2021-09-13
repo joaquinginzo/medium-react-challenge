@@ -1,19 +1,49 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    &__person{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    &__news{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        &-item{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.content__news-img{
+    width: 60px;
+    height: 60px;
+    margin:10px
+}
+
 .container{
-    background-color:lightgrey ;
+    background-color:#f9f9f9;
+    margin-left: -40px;
+    margin-bottom: 10px;
+    &__title{
+        padding: 10px 50px;
+    }
 }
 
 .content__img-picture{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: 30px 20px;
+    margin: 20px;
 }
 
 .button{
     background-color: lime;
-    margin: 5px 0px 0px 10px;
+    margin: 5px 0px 20px 50px;
     height: 40px;
     width: 70px;
-    border-radius: 25%;
+    border-radius: 50%;
     color: white;
 }
